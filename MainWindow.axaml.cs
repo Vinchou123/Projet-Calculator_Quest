@@ -6,6 +6,8 @@ namespace CalculatorQuest
 {
     public partial class MainWindow : Window
     {
+        private bool _isResultDisplayed = false; // Ajouter un flag pour vérifier si un résultat est affiché
+
         public MainWindow()
         {
             InitializeComponent();
@@ -32,47 +34,53 @@ namespace CalculatorQuest
             }
         }
 
-
-       private void HandleButtonClick(string content)
-{
-    if (string.IsNullOrEmpty(content))
-    {
-        return;
-    }
-
-    switch (content)
-    {
-        case "C":
-            Display.Text = string.Empty;
-            break;
-        case "=":
-            try
+        private void HandleButtonClick(string content)
+        {
+            if (string.IsNullOrEmpty(content))
             {
-                // Vérifiez que Display.Text n'est pas vide avant d'appeler EvaluateExpression
-                if (!string.IsNullOrEmpty(Display.Text))
-                {
-                    string expression = Display.Text.Replace("÷", "/").Replace("×", "*").Replace(",", ".");
-
-                    var result = EvaluateExpression(expression);
-                    Display.Text = result.ToString();
-                }
-                else
-                {
-                    Display.Text = "Erreur";
-                }
+                return;
             }
-            catch (Exception)
+
+            // Si un résultat est affiché, on réinitialise l'affichage avant d'ajouter un nouveau chiffre
+            if (_isResultDisplayed && content != "=" && content != "C")
             {
-                Display.Text = "Erreur";
+                Display.Text = string.Empty;
+                _isResultDisplayed = false;
             }
-            break;
-        default:
-            Display.Text += content;
-            break;
-    }
-}
 
+            switch (content)
+            {
+                case "C":
+                    Display.Text = string.Empty;
+                    _isResultDisplayed = false; // Réinitialiser le flag
+                    break;
+                case "=":
+                    try
+                    {
+                        // Vérifiez que Display.Text n'est pas vide avant d'appeler EvaluateExpression
+                        if (!string.IsNullOrEmpty(Display.Text))
+                        {
+                            string expression = Display.Text.Replace("÷", "/").Replace("×", "*").Replace(",", ".");
 
+                            var result = EvaluateExpression(expression);
+                            Display.Text = result.ToString();
+                            _isResultDisplayed = true; // Marquer qu'un résultat est affiché
+                        }
+                        else
+                        {
+                            Display.Text = "Erreur";
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        Display.Text = "Erreur";
+                    }
+                    break;
+                default:
+                    Display.Text += content;
+                    break;
+            }
+        }
 
         private double EvaluateExpression(string expression)
         {
@@ -85,7 +93,5 @@ namespace CalculatorQuest
             var dataTable = new System.Data.DataTable();
             return Convert.ToDouble(dataTable.Compute(expression, string.Empty));
         }
-
     }
 }
-

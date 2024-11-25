@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalculatorQuest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3680a98915009bb6b09e1de54a492a8113c50b9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalculatorQuest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalculatorQuest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

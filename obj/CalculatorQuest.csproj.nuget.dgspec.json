@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CalculatorQuest\\CalculatorQuest.csproj": {}
+    "C:\\Users\\vince\\Projet-Calculator_Quest\\CalculatorQuest.csproj": {}
   },
   "projects": {
-    "C:\\CalculatorQuest\\CalculatorQuest.csproj": {
+    "C:\\Users\\vince\\Projet-Calculator_Quest\\CalculatorQuest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CalculatorQuest\\CalculatorQuest.csproj",
+        "projectUniqueName": "C:\\Users\\vince\\Projet-Calculator_Quest\\CalculatorQuest.csproj",
         "projectName": "CalculatorQuest",
-        "projectPath": "C:\\CalculatorQuest\\CalculatorQuest.csproj",
+        "projectPath": "C:\\Users\\vince\\Projet-Calculator_Quest\\CalculatorQuest.csproj",
         "packagesPath": "C:\\Users\\vince\\.nuget\\packages\\",
-        "outputPath": "C:\\CalculatorQuest\\obj\\",
+        "outputPath": "C:\\Users\\vince\\Projet-Calculator_Quest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vince\\AppData\\Roaming\\NuGet\\NuGet.Config"
