@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorQuest", "CalculatorQuest.csproj", "{02B69F68-D0E3-4018-AEE3-161CB131F12E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02B69F68-D0E3-4018-AEE3-161CB131F12E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B69F68-D0E3-4018-AEE3-161CB131F12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B69F68-D0E3-4018-AEE3-161CB131F12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B69F68-D0E3-4018-AEE3-161CB131F12E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {591F8B83-D755-47F1-B4AF-2B6EF1AFAA1F}
+	EndGlobalSection
+EndGlobal
