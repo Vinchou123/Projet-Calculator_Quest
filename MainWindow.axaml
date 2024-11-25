@@ -9,9 +9,7 @@
              VerticalAlignment="Top" TextAlignment="Right"
              IsReadOnly="True" Margin="0,0,0,10" Grid.Row="0" />
 
-    <!-- Boutons -->
     <UniformGrid Rows="5" Columns="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1">
-      <!-- Autres boutons existants -->
       <Button Content="7" CommandParameter="7" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
       <Button Content="8" CommandParameter="8" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
       <Button Content="9" CommandParameter="9" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
@@ -29,9 +27,9 @@
       <Button Content="," CommandParameter="," Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
       <Button Content="=" CommandParameter="=" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
       <Button Content="C" CommandParameter="C" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-
-      <!-- Nouveau bouton Effacer -->
       <Button Content="Eff" CommandParameter="Effacer" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+     <Button Content="←" CommandParameter="←" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+      <Button Content="→" CommandParameter="→" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </UniformGrid>
   </Grid>
 </Window>

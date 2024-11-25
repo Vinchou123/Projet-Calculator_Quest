@@ -83,6 +83,20 @@ namespace CalculatorQuest
                         Display.Text = Display.Text.Remove(Display.Text.Length - 1);
                     }
                     break;
+                case "←":
+                    // Gérer la flèche gauche pour revenir en arrière dans le texte
+                    if (Display.SelectionStart > 0)
+                    {
+                        Display.SelectionStart--;  // Déplacer le curseur vers la gauche
+                    }
+                    break;
+                case "→":
+                    // Gérer la flèche droite pour avancer dans le texte
+                    if (Display.SelectionStart < Display.Text.Length)
+                    {
+                        Display.SelectionStart++;  // Déplacer le curseur vers la droite
+                    }
+                    break;
                 default:
                     Display.Text += content;
                     break;
