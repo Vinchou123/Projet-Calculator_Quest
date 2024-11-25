@@ -42,7 +42,7 @@ namespace CalculatorQuest
             }
 
             // Si un résultat est affiché, on réinitialise l'affichage avant d'ajouter un nouveau chiffre
-            if (_isResultDisplayed && content != "=" && content != "C")
+            if (_isResultDisplayed && content != "=" && content != "C" && content != "Effacer")
             {
                 Display.Text = string.Empty;
                 _isResultDisplayed = false;
@@ -74,6 +74,13 @@ namespace CalculatorQuest
                     catch (Exception)
                     {
                         Display.Text = "Erreur";
+                    }
+                    break;
+                case "Eff":
+                    // Supprimer le dernier caractère de l'affichage
+                    if (Display.Text?.Length > 0)
+                    {
+                        Display.Text = Display.Text.Remove(Display.Text.Length - 1);
                     }
                     break;
                 default:

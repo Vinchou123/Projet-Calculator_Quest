@@ -3,8 +3,6 @@
         x:Class="CalculatorQuest.MainWindow"
         Width="300" Height="400" Title="Calculatrice">
 
-  <!-- StyleInclude Source="avares://CalculatorQuest/Styles.axaml"/-->
-
   <Grid RowDefinitions="Auto, *, Auto" Margin="10">
     <!-- Affichage -->
     <TextBox x:Name="Display" FontSize="24" HorizontalAlignment="Stretch"
@@ -13,6 +11,7 @@
 
     <!-- Boutons -->
     <UniformGrid Rows="5" Columns="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1">
+      <!-- Autres boutons existants -->
       <Button Content="7" CommandParameter="7" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
       <Button Content="8" CommandParameter="8" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
       <Button Content="9" CommandParameter="9" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
@@ -30,6 +29,9 @@
       <Button Content="," CommandParameter="," Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
       <Button Content="=" CommandParameter="=" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
       <Button Content="C" CommandParameter="C" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+      <!-- Nouveau bouton Effacer -->
+      <Button Content="Eff" CommandParameter="Effacer" Click="OnButtonClick" Width="60" Height="60" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </UniformGrid>
   </Grid>
 </Window>
