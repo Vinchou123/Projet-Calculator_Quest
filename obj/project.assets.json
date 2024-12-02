@@ -1672,11 +1672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vince\\Projet-Calculator_Quest\\CalculatorQuest.csproj",
+      "projectUniqueName": "C:\\Users\\vince\\Projet-Calculator_Quest-old\\CalculatorQuest.csproj",
       "projectName": "CalculatorQuest",
-      "projectPath": "C:\\Users\\vince\\Projet-Calculator_Quest\\CalculatorQuest.csproj",
+      "projectPath": "C:\\Users\\vince\\Projet-Calculator_Quest-old\\CalculatorQuest.csproj",
       "packagesPath": "C:\\Users\\vince\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vince\\Projet-Calculator_Quest\\obj\\",
+      "outputPath": "C:\\Users\\vince\\Projet-Calculator_Quest-old\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vince\\AppData\\Roaming\\NuGet\\NuGet.Config"

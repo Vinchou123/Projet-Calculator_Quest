@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X6BEKBykTr4=",
+  "dgSpecHash": "C/bKmKzqhJs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vince\\Projet-Calculator_Quest\\CalculatorQuest.csproj",
+  "projectFilePath": "C:\\Users\\vince\\Projet-Calculator_Quest-old\\CalculatorQuest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vince\\.nuget\\packages\\atksharp\\3.24.24.95\\atksharp.3.24.24.95.nupkg.sha512",
     "C:\\Users\\vince\\.nuget\\packages\\avalonia\\11.2.1\\avalonia.11.2.1.nupkg.sha512",
